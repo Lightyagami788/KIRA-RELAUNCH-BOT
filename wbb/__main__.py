@@ -103,35 +103,6 @@ async def start_bot():
     print("[INFO]: Turned off!")
 
 
-home_keyboard_pm = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(
-                text="Commands ❓", callback_data="bot_commands"
-            ),
-            InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="System Stats 🖥",
-                callback_data="stats_callback",
-            ),
-            InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Add Me To Your Group 🎉",
-                url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
-            )
-        ],
-    ]
-)
-
 home_text_pm = (
     f"Hey there! My name is {BOT_NAME}. I can manage your "
     + "group with lots of useful features, feel free to "
@@ -146,20 +117,19 @@ keyboard = InlineKeyboardMarkup(
                 text="Help ❓",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
-            InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
-            ),
         ],
         [
             InlineKeyboardButton(
                 text="System Stats 💻",
                 callback_data="stats_callback",
             ),
-            InlineKeyboardButton(text="Support 👨", url="t.me/WBBSupport"),
+            InlineKeyboardButton(text="Support 👨", url="t.me/kiralomgs"),
         ],
-    ]
-)
+        [ 
+            InlineKeyboardButton(
+               text= "MY OWNER🔥",
+               url="t.me/@mrx67677
+
 
 
 @app.on_message(filters.command("start"))
